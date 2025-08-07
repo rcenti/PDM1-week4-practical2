@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PDM1 - W4P2 - Exercise 2.2</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../lib/main-styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="../lib/libraries/p5.min.js"></script>
+  </head>
+
+  <body>
+    <h1>Exercise 2.2</h1>
+    <p>Your sketch:</p>
+    <div class="guidance">
+        <h2>Instructions</h2>
+        <div>
+            <p>Copy and paste your solution to the previous exercise (<strong>exercise2-1/sketch.js</strong>) into 
+                <code>exercise2-2/sketch.js</code></p>
+            <p>Convert the existing squares into rectangles that take up the full height of the canvas. Add code to make 
+                a rectangle turn blue when it is clicked. A selected rectangle should stay blue as long as the mouse is pressed 
+                and positioned over the rectangle. It should return to white when the mouse is released or moved out of the 
+                rectangle.
+            </p>
+            <p>It is recommended that you write a function to check if a rectangle is selected.</p>
+            <p>When you are done, check your work using <a href="./check-exercise2-2.html">check-exercise2-2.html</a>.</p>
+            <p>Expected output:</p>
+            <p>
+                <video width="400" height="400" controls>
+                    <source src="./assets/exercise2-2.mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </p>
+        </div>
+        <div>
+            <button class="btn btn-primary hint" type="button" data-bs-toggle="collapse" data-bs-target="#hint" aria-expanded="false" aria-controls="hint">
+                Hint
+            </button>
+            <div class="collapse" id="hint">
+                <div class="card card-body">
+                    <p>You will need to add the new functionality inside the <code>for</code> loop, rather than in 
+                        a mouse event function.</p>
+                    <p>You have seen many examples of how to check if a point is over 
+                        a shape or within a particular range. Look back at sample solutions for previous practicals if 
+                    you're not sure how check.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="sketch.js"></script>
+  </body>
+</html>

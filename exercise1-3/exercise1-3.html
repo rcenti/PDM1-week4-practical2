@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PDM1 - W4P2 - Exercise 1.3</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../lib/main-styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="../lib/libraries/p5.min.js"></script>
+  </head>
+
+  <body>
+    <h1>Exercise 1.3</h1>
+    <p>Your sketch:</p>
+    <div class="guidance">
+        <h2>Instructions</h2>
+        <div>
+            <p>Setup your sketch in <strong>exercise1-3/sketch.js</strong> as usual. Create a 
+            600px by 600px canvas.</p>
+            <p>Your task is to use (ideally one) <code>while</code> loop to create the expected output 
+            shown below.</p>
+            <p>You can pick whatever three colours and stroke weight you like. A stroke weight of 3 was 
+                used to create the image below.
+            </p>
+            <p>In the image below:</p>
+            <ul>
+                <li>The blue lines stretch from the centre point of the canvas to the right edge. They are 10 pixels apart 
+                    on the y axis on the right edge.
+                </li>
+                <li>The black lines stretch from the left edge of the canvas to the top right corner. The lines are 
+                    10px apart on the y axis at the left edge.
+                </li>
+                <li>The pink lines are 10px apart on the y axis on the left edge. They stretch from the left edge to the 
+                    bottom right corner.
+                </li>
+            </ul>
+            <p>When you are done, check your work using <a href="./check-exercise1-3.html">check-exercise1-3.html</a>.</p>
+            <p>Expected output:</p>
+            <p>
+                <img src="./assets/exercise1-3.png" alt="An abstract image made up of coloured lines" width="600px" height="600px">
+            </p>
+        </div>
+        <div>
+            <button class="btn btn-primary hint" type="button" data-bs-toggle="collapse" data-bs-target="#hint" aria-expanded="false" aria-controls="hint">
+                Hint
+            </button>
+            <div class="collapse" id="hint">
+                <div class="card card-body">
+                    <p>Inside the <code>while</code> loop, draw three lines--one of each colour.</p>
+                    <p>The <a href="https://p5js.org/reference/#/p5/line" target="_blank">line()</a> function 
+                    takes 4 arguments. For each colour, three of those four arguments will be the same every time 
+                    the loop executes. One argument will be the loop variable. Take a moment to work out which arguments 
+                    are fixes and which argument will vary for each colour of line—-this should give you the loop variable.</p>
+                    <p>Finally, work out the start value and test condition for the loop variable.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="sketch.js"></script>
+  </body>
+</html>
